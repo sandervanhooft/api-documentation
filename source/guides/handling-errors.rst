@@ -219,7 +219,8 @@ The Mollie API will only ever return a subset of all legal HTTP status codes. He
 |429|Too Many Requests – Your request has hit a rate limit. Please wait for a bit and retry.                           |
 +---+------------------------------------------------------------------------------------------------------------------+
 |500|Internal Server Error – An internal server error occurred while processing your request. Our developers are       |
-|   |notified automatically, but if you have any information on how you triggered the problem, please :ref:`contact us. <mailto:ibrokeyourapi@mollie.com>`      |
+|   |notified automatically, but if you have any information on how you triggered the problem,                         |
+|   |please :ref:`contact us. <mailto:ibrokeyourapi@mollie.com>`                                                       |
 +---+------------------------------------------------------------------------------------------------------------------+
 |502|Bad Gateway – The service is temporarily unavailable, either due to calamity or (planned) maintenance. Please     |
 |   |retry the request at a later time.                                                                                |
