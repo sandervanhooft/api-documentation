@@ -49,7 +49,7 @@ using the `Dashboard <https://www.mollie.com/dashboard/settings/profiles>`_.
 
 How does the Mollie API work?
 -----------------------------
-.. image:: guides/images/api-overview-flow@2x.png
+.. image:: https://assets.docs.mollie.com/_images/api-overview-flow@2x.png
 
 #. A customer on your website decides to checkout.
 
