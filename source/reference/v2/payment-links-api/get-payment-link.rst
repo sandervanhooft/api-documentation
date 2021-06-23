@@ -161,6 +161,14 @@ Example
       curl -X GET https://api.mollie.com/v2/payment-links/pl_4Y0eZitmBnQ6IDoMqZQKh \
          -H "Authorization: Bearer test_dHar4XY7LxsDOtmnkVtjNVWXLSlXsM"
 
+   .. code-block:: php
+      :linenos:
+
+      <?php
+      $mollie = new \Mollie\Api\MollieApiClient();
+      $mollie->setApiKey("test_dHar4XY7LxsDOtmnkVtjNVWXLSlXsM");
+      $paymentLink = $mollie->paymentLinks->get("pl_4Y0eZitmBnQ6IDoMqZQKh");
+
 Response
 ^^^^^^^^
 .. code-block:: none
