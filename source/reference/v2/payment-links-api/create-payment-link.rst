@@ -133,6 +133,24 @@ Example
          -d "redirectUrl=https://webshop.example.org/thanks" \
          -d "webhookUrl=https://webshop.example.org/payment-links/webhook/"
 
+   .. code-block:: php
+      :linenos:
+
+      <?php
+      $mollie = new \Mollie\Api\MollieApiClient();
+      $mollie->setApiKey("test_dHar4XY7LxsDOtmnkVtjNVWXLSlXsM");
+      $paymentLink = $mollie->paymentLinks->create([
+        "amount" => [
+          "currency" => "EUR",
+          "value" => "24.95",
+        ],
+        "description" => "Bicycle tires",
+        "expiresAt" => "2021-06-06T11:00:00+00:00",
+        "redirectUrl' => "https://webshop.example.org/thanks",
+        "webhookUrl" => "https://webshop.example.org/payment-links/webhook/",
+      ]);
+      $paymentLink->getCheckoutUrl();
+
 Response
 ^^^^^^^^
 .. code-block:: none
